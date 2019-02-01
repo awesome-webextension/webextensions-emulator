@@ -1,4 +1,4 @@
-# WebExtensions Emulator
+# WebExtensions Emulator [![npm][npm]][npm-url]
 
 Functional fake WebExtensions environment for development.
 
@@ -26,3 +26,6 @@ Depending on your build system, load `core` before everything else, then load `b
 If using webpack-dev-server, make sure `inline` is disabled to make it work with iframe.
 
 You can also add your own patch before loading your source code. PRs are welcome if you find any bug or incompletion.
+
+[npm]: https://img.shields.io/npm/v/webextensions-emulator.svg
+[npm-url]: https://npmjs.com/package/webextensions-emulator
