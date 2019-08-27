@@ -22,8 +22,7 @@ module.exports = {
       })
       : null
   ].filter(Boolean),
-  devServer: {
-    // to run in iframe
-    inline: false
+  optimization: {
+    minimize: false
   }
 }
