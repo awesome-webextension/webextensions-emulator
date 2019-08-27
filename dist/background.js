@@ -17235,11 +17235,13 @@ function runtimeSendMessage (listenersArea) {
         if (isClosed) {
           return reject(new Error('Attempt to response a closed channel'))
         }
-        try {
-          // deep clone & check data
-          response = JSON.parse(JSON.stringify(response))
-        } catch (err) {
-          return reject(new TypeError('Response data not serializable'))
+        if (response) {
+          try {
+            // deep clone & check data
+            response = JSON.parse(JSON.stringify(response))
+          } catch (err) {
+            return reject(new TypeError('Response data not serializable'))
+          }
         }
         resolve(response)
       }
