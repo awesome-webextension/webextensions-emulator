@@ -1,6 +1,6 @@
 {
   "name": "webextensions-emulator",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Functional fake WebExtensions environment for development.",
   "repository": {
     "type": "git",
