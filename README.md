@@ -19,7 +19,7 @@ Simply stubing is not enough though, this project patches some of the apis to ma
 
 Message communications between the developing page and background page needs a bit more work. This project offers a workaround by running the background patch with the background source code in an iframe.
 
-## Usage
+## Instalation
 
 Use `core.js` and `background.js` module in `dist`. You can also use `lib/core/index.js` and `lib/background/index.js` directly with webpack.
 
@@ -31,3 +31,7 @@ You can also add your own patch before loading your source code. PRs are welcome
 
 [npm]: https://img.shields.io/npm/v/webextensions-emulator.svg
 [npm-url]: https://npmjs.com/package/webextensions-emulator
+
+## Usage
+
+- `browser.runtion.sendMessage._sender` is a sinon stub which is function that accepts the message object and returns the `sender` object for event listener. You can use `callsFake` or any stub method to change the result.
