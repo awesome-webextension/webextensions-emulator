@@ -2,6 +2,8 @@
 
 Functional fake WebExtensions environment for development.
 
+## 👉 For higher level usage check out [crimx/neutrino-webextension](https://github.com/crimx/neutrino-webextension).
+
 ## Why?
 
 Developing UI page in Chrome Extensions or WebExtensions could be daunting:
