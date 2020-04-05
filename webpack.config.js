@@ -22,6 +22,9 @@ module.exports = {
       })
       : null
   ].filter(Boolean),
+  performance: {
+    hints: false
+  },
   optimization: {
     minimize: false
   }
