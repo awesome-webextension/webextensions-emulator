@@ -8,7 +8,7 @@
 
 <body>
   <script src="<%= htmlWebpackPlugin.files.js.find(c => c.includes('core')) %>"></script>
-  <iframe width="0" height="0" frameborder="0"
+  <iframe style="position: absolute;" width="0" height="0" frameborder="0"
     srcdoc="<script src='<%= htmlWebpackPlugin.files.js.find(c => c.includes('background')) %>'></script>"></iframe>
 </body>
 
